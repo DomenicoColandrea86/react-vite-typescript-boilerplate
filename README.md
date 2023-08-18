@@ -28,6 +28,7 @@ Copy and paste the following into Terminal:
 ```sh
 npx degit DomenicoColandrea86/react-vite-typescript-tailwind-boilerplate my-app
 cd my-app
+git init
 nvm use
 pnpm install
 pnpm dev
