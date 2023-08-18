@@ -1,5 +1,5 @@
 {
-  "name": "reactjs-vite-tailwindcss-boilerplate",
+  "name": "react-vite-typescript-tailwind-boilerplate",
   "description": "This is a boilerplate made with Vite, React, TypeScript, Vitest, Testing Library, Tailwind, Eslint, Prettier, Nx, and pnpm.",
   "version": "0.0.1",
   "author": "Domenico Colandrea <domenic.colandrea@gmail.com>",
