@@ -12,7 +12,7 @@ RUN apk update && \
 WORKDIR /app
 
 # install global deps
-RUN npm install -g pnpm @nrwl/nx-linux-arm64-gnu
+RUN npm install pnpm @nrwl/nx-linux-arm64-gnu -g
 
 # copy files
 COPY . /app
