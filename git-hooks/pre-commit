@@ -16,7 +16,7 @@ then
 fi
 
 echo "${CYAN}linting staged typescript files${NC}"
-pnpm eslint --fix --color $staged_ts_files
+eslint --fix --color $staged_ts_files
 linter_exit_code=$?
 
 if [ $linter_exit_code -ne 0 ]
@@ -26,6 +26,6 @@ then
 else
   echo "${GREEN} ✔ eslint did not find any errors [̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]${NC}"
   echo "${CYAN} running prettier"
-  pnpm prettier --write $staged_ts_files
+  prettier --write $staged_ts_files
   exit 0
 fi
