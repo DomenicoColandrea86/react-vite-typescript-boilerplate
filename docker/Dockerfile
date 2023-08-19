@@ -14,7 +14,7 @@ WORKDIR /app
 RUN npm install -g pnpm
 
 # copy files
-COPY . .
+COPY . /app
 
 # install deps
 RUN pnpm install
