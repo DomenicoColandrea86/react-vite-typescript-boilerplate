@@ -25,8 +25,8 @@ const App = () => {
       </div>
       <h1 className="text-4xl font-bold">Vite + React</h1>
       <p className="max-w-lg p-2 text-gray-500">
-        This is a boilerplate made with React, TypeScript, Vite, Vitest, Testing
-        Library, Tailwind, ESLint, Prettier, Nx, and pnpm.
+        This is a boilerplate made with React, Vite, TypeScript, Vitest, Testing
+        Library, Tailwind, ESLint, Prettier, Nx, Pnpm, Docker and NGINX.
       </p>
       <div className="p-4">
         <button
