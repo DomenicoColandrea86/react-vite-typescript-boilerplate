@@ -34,8 +34,6 @@ RUN rm -rf *
 
 COPY --from=builder /app/dist .
 
-EXPOSE 80 443
-
 STOPSIGNAL SIGTERM
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
