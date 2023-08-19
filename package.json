@@ -18,7 +18,7 @@
     "clean:dist": "rimraf dist",
     "clean:node_modules": "rimraf node_modules",
     "preinstall": "npx only-allow pnpm",
-    "postinstall": "git config core.hooksPath ./git-hooks"
+    "git-hooks": "git config core.hooksPath ./git-hooks"
   },
   "dependencies": {
     "react": "^18.2.0",

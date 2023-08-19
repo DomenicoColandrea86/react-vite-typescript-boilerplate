@@ -80,6 +80,12 @@ pnpm run test:ui
 pnpm clean
 ```
 
+### Setup Git Hooks
+
+```bash
+pnpm git-hooks
+```
+
 ## License
 
 This project is licensed under the MIT License. Happy Coding!
