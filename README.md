@@ -1,19 +1,19 @@
 # React Vite TypeScript Boilerplate
 
-> This is a boilerplate made with React, TypeScript, Vite, Vitest, Testing Library, Tailwind, ESLint, Prettier, Nx, pnpm, Docker and NGINX.
+> This is a boilerplate made with React, TypeScript, Vite, Vitest, Testing Library, Tailwind, ESLint, Prettier, Nx, Pnpm, Docker and NGINX.
 
 ## What's inside?
 
+- [React](https://reactjs.org)
 - [Vite](https://vitejs.dev)
-- [ReactJS](https://reactjs.org)
 - [TypeScript](https://www.typescriptlang.org)
 - [Vitest](https://vitest.dev)
 - [Testing Library](https://testing-library.com)
-- [Tailwindcss](https://tailwindcss.com)
+- [Tailwind](https://tailwindcss.com)
 - [Eslint](https://eslint.org)
 - [Prettier](https://prettier.io)
 - [Nx](https://nx.dev/)
-- [pnpm](https://pnpm.io/)
+- [Pnpm](https://pnpm.io/)
 - [Docker](https://www.docker.com/)
 - [NGINX](https://nginx.org/en/)
 
