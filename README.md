@@ -90,11 +90,11 @@ pnpm docker:build
 
 ### Docker Run
 
+Served via NGINX at [http://localhost](http://localhost)
+
 ```bash
 pnpm docker:run
 ```
-
-Served via NGINX at [http://localhost](http://localhost)
 
 ## License
 
