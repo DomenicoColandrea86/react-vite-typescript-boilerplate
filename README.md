@@ -1,4 +1,4 @@
-# React Vite TypeScript Tailwind Boilerplate
+# React Vite Boilerplate
 
 > This is a boilerplate made with React, TypeScript, Vite, Vitest, Testing Library, Tailwind, ESLint, Prettier, Nx, and pnpm.
 
@@ -26,7 +26,7 @@ curl -fsSL https://get.pnpm.io/install.sh | sh -
 Copy and paste the following into Terminal:
 
 ```sh
-npx degit DomenicoColandrea86/react-vite-typescript-tailwind-boilerplate my-app
+npx degit DomenicoColandrea86/react-vite-boilerplate my-app
 cd my-app
 git init
 nvm use
