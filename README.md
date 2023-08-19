@@ -56,10 +56,10 @@ pnpm lint
 pnpm build
 ```
 
-### Preview
+### Start
 
 ```bash
-pnpm preview
+pnpm start
 ```
 
 ### Test

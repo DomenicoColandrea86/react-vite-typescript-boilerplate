@@ -5,7 +5,7 @@
   "author": "Domenico Colandrea <domenic.colandrea@gmail.com>",
   "private": true,
   "scripts": {
-    "preview": "vite preview",
+    "start": "vite preview",
     "dev": "nx exec -- vite",
     "build": "nx exec -- concurrently --prefix-colors cyan,green,magenta \"pnpm:build:*\"",
     "build:app": "nx exec -- tsc && vite build",
