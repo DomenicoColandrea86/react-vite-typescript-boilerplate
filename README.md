@@ -74,6 +74,12 @@ View and interact with your tests via UI.
 pnpm run test:ui
 ```
 
+### Clean
+
+```bash
+pnpm clean
+```
+
 ## License
 
 This project is licensed under the MIT License. Happy Coding!
