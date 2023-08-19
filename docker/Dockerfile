@@ -5,13 +5,14 @@ FROM node:18-alpine AS builder
 RUN apk update && \
     apk upgrade && \
     apk add bash && \
+    apk add git && \
     rm -rf /var/cache/apk/*
 
 # set working directory
 WORKDIR /app
 
 # install pnpm
-RUN npm install -g pnpm
+RUN npm install -g pnpm @nrwl/nx-linux-arm64-gnu
 
 # copy files
 COPY . /app
@@ -25,8 +26,7 @@ RUN pnpm build
 # serve app via nginx
 FROM nginx:alpine
 
-COPY docker/nginx/nginx.conf /etc/nginx/nginx.conf
-COPY docker/nginx/default.conf /etc/nginx/conf.d/default.conf
+ADD docker/nginx /etc/nginx
 
 WORKDIR /app/dist
 

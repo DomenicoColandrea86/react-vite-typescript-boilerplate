@@ -7,9 +7,9 @@
   "scripts": {
     "start": "vite preview",
     "dev": "nx exec -- vite",
-    "build": "nx exec -- concurrently --prefix-colors cyan,green,magenta \"pnpm:build:*\"",
+    "build": "concurrently --prefix-colors cyan,green,magenta \"pnpm:build:*\"",
     "build:app": "nx exec -- tsc && vite build",
-    "build:lint": "nx exec -- eslint --fix --color .",
+    "build:lint": "nx exec -- exec -- eslint --fix --color .",
     "test": "nx exec -- vitest",
     "test:ui": "nx exec -- vitest --ui",
     "lint": "nx exec -- eslint --fix --color .",
@@ -18,9 +18,13 @@
     "clean:dist": "rimraf dist",
     "clean:node_modules": "rimraf node_modules",
     "preinstall": "npx only-allow pnpm",
-    "git-hooks": "git config core.hooksPath ./git-hooks"
+    "postinstall": "git config core.hooksPath ./git-hooks",
+    "docker:build": "docker build -f docker/Dockerfile -t app .",
+    "docker:run": "docker run -it -p 80:80 app"
   },
   "dependencies": {
+    "@esbuild/linux-arm64": "0.18.20",
+    "@nrwl/nx-linux-arm64-gnu": "^15.9.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

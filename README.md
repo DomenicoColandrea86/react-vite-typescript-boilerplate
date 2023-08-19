@@ -1,6 +1,6 @@
-# React Vite Boilerplate
+# React Vite TypeScript Boilerplate
 
-> This is a boilerplate made with React, TypeScript, Vite, Vitest, Testing Library, Tailwind, ESLint, Prettier, Nx, and pnpm.
+> This is a boilerplate made with React, TypeScript, Vite, Vitest, Testing Library, Tailwind, ESLint, Prettier, Nx, pnpm, Docker and NGINX.
 
 ## What's inside?
 
@@ -14,6 +14,8 @@
 - [Prettier](https://prettier.io)
 - [Nx](https://nx.dev/)
 - [pnpm](https://pnpm.io/)
+- [Docker](https://www.docker.com/)
+- [NGINX](https://nginx.org/en/)
 
 ## Local Development Quick Start
 
@@ -26,15 +28,15 @@ curl -fsSL https://get.pnpm.io/install.sh | sh -
 Copy and paste the following into Terminal:
 
 ```sh
-npx degit DomenicoColandrea86/react-vite-boilerplate my-app
-cd my-app
+npx degit DomenicoColandrea86/react-vite-typescript-boilerplate app
+cd app
 git init
 nvm use
 pnpm install
 pnpm dev
 ```
 
-Serve with hot reload at [http://localhost:5173](http://localhost:5173)
+Served with hot reload at [http://localhost:5173](http://localhost:5173)
 
 ## Scripts
 
@@ -80,11 +82,19 @@ pnpm run test:ui
 pnpm clean
 ```
 
-### Setup Git Hooks
+### Docker Build
 
 ```bash
-pnpm git-hooks
+pnpm docker:build
 ```
+
+### Docker Run
+
+```bash
+pnpm docker:run
+```
+
+Served via NGINX at [http://localhost](http://localhost)
 
 ## License
 
