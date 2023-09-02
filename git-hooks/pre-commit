@@ -26,6 +26,6 @@ then
 else
   echo "${GREEN} ✔ eslint did not find any errors [̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]${NC}"
   echo "${CYAN} running prettier"
-  prettier --write $staged_ts_files
+  npx prettier --write $staged_ts_files
   exit 0
 fi
