@@ -3,7 +3,7 @@ import reactLogo from '/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 
-const App = () => {
+export const App = () => {
   const [count, setCount] = useState(0);
   return (
     <>
@@ -36,7 +36,7 @@ const App = () => {
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Edit <code>src/main.tsx</code> and save to test HMR
         </p>
       </div>
     </>

@@ -16,6 +16,25 @@
   -webkit-text-size-adjust: 100%;
 }
 
+#root {
+  @apply max-w-screen-xl mx-auto px-4 text-center;
+}
+
 body {
   @apply m-0 flex place-items-center min-h-screen;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
