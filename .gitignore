@@ -1,4 +1,6 @@
-.vscode
+/.vscode
+/.vitest
+
 dist
 dist-ssr
 *.local
