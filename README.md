@@ -19,18 +19,31 @@
 
 ## Local Development Quick Start
 
+Download and install `nvm` (Node Version Manager)
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/vx.x.x/install.sh | bash
+```
+
 Download and Install `pnpm`
 
 ```bash
 curl -fsSL https://get.pnpm.io/install.sh | sh -
 ```
 
+or via `npm`
+
+```bash
+npm install -g pnpm
+```
+
+<br>
+
 Copy and paste the following into Terminal:
 
 ```sh
 npx degit DomenicoColandrea86/react-vite-typescript-boilerplate app
 cd app
-git init
 nvm use
 pnpm install
 pnpm dev
