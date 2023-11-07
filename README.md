@@ -17,6 +17,8 @@
 - [Docker](https://www.docker.com/)
 - [NGINX](https://nginx.org/en/)
 
+<br>
+
 ## Local Development Quick Start
 
 Download and install `nvm` (Node Version Manager)
@@ -50,6 +52,8 @@ pnpm dev
 ```
 
 Served with hot reload at [http://localhost:5173](http://localhost:5173)
+
+<br>
 
 ## Scripts
 
